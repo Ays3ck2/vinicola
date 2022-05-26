@@ -1,0 +1,118 @@
+html, body {
+    position:relative;
+    overflow-x:hidden;
+  }
+  *{
+    padding:0;
+    margin: 0;
+  }
+
+.mudar_cor_texto{
+    color: black;
+}
+
+.container{
+    color: white;
+    display: grid;
+    background-color:gray;
+    grid-template:768px 768px 768px 768px / 1366px 1366px 1366px 1366px;
+    grid-template-areas: "a1 a1 a1 a1 a1 a1"
+                         "a2 a2 a2 a2 a2 a2"
+                         "a3 a3 a3 a3 a3 a3"
+                         "a4 a4 a4 a4 a4 a4";
+
+
+                         
+}
+/*  cada quadrado desse representa uma seção no site, ai cada seção vc muda por esse ".r1" ai */
+.r1{
+      grid-area: a1;
+  color: white;
+  background-image: url('../fotos/Introdução\ 1.png');
+  background-repeat: no-repeat;
+  background-attachment:scroll;
+}
+
+.r2{
+    grid-area: a2;
+    color: white;
+    background-image: url('../fotos/Introdução\ 2.png');
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+}
+
+.r3{
+    grid-area: a3;
+    color: white;
+    background-image: url('../fotos/Sobre.png');
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+}
+
+.r4{
+    grid-area: a4;
+    color: white;
+    background-image: url('../fotos/Contato.png');
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+}
+
+.r5{
+    grid-area: a5;
+    display: none;
+
+}
+
+.r6{
+    grid-area: a6;
+    display: none;
+
+}
+/* Medias */
+@media only screen and  (max-width: 1920px) {
+    .container{
+        color: white;
+        display: grid;
+        background-color:#808080;
+        grid-template:1500 1500 1500 1500 / 1920px 1920px 1920px 1920px;
+        grid-template-areas: "a1 a1 a1 a1 a1 a1"
+                             "a2 a2 a2 a2 a2 a2"
+                             "a3 a3 a3 a3 a3 a3"
+                             "a4 a4 a4 a4 a4 a4";
+    
+    
+                             
+    }
+ 
+  
+  }
+  @media only screen and  (max-width: 1536px) {
+    .container{
+        color: white;
+        display: grid;
+        background-color:gray;
+        grid-template:960px  960px  960px  960px  / 1536px 1536px 1536px 1536px;
+        grid-template-areas: "a1 a1 a1 a1 a1 a1"
+                             "a2 a2 a2 a2 a2 a2"
+                             "a3 a3 a3 a3 a3 a3"
+                             "a4 a4 a4 a4 a4 a4";
+    
+    
+                             
+    }
+    .r1{
+        background-size: 1536px 960px;
+    }
+    .r2{
+        background-size: 1536px 960px;
+
+    }
+    .r3{
+        background-size: 1536px 960px;
+
+    }
+    .r4{
+        background-size: 1536px 960px;
+
+    }
+  }
